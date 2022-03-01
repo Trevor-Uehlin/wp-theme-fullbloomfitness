@@ -14,11 +14,11 @@ if ( ! function_exists( 'fbf_add_styles' ) ) {
 }
 
 
-add_action( 'wp_enqueue_scripts', 'fbf_add_scripts' );
 function fbf_add_scripts() {
-    wp_register_script( 'custom js', plugins_url( 'fbf.js' , __FILE__ ) );
-    wp_enqueue_script("custom js");
+    wp_register_script( 'custom-js', get_stylesheet_directory_uri() . 'fbf.js', array( 'jquery-migrate' ), null );
+    wp_enqueue_script("custom-js");
 }
+add_action( 'wp_enqueue_scripts', 'fbf_add_scripts' );
 
 
 
