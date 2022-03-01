@@ -11,3 +11,7 @@ License:    GNU General Public License v2 or later
 .site-header{
     overflow: hidden;
 }
+
+.no-text-decoration{
+    text-decoration: none;
+}
