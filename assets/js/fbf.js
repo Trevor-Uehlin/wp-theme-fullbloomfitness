@@ -4,7 +4,7 @@ console.log("HELLO FROM FBF.JS");
 
 
 var siteTitle = document.getElementsByClassName("wp-block-site-title");
-console.log(siteTitle.length);
+console.log(siteTitle);
 
 for(var i = 0; i < siteTitle.length; i++){
 
