@@ -15,7 +15,7 @@ if ( ! function_exists( 'fbf_add_styles' ) ) {
 
 
 function fbf_add_scripts() {
-    wp_register_script( 'custom-js', get_stylesheet_directory_uri() . '/fbf.js', array(), null );
+    wp_register_script( 'custom-js', get_stylesheet_directory_uri() . '/assets/js/fbf.js', array(), null );
     wp_enqueue_script("custom-js");
 }
 add_action( 'wp_enqueue_scripts', 'fbf_add_scripts' );
