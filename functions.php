@@ -5,12 +5,18 @@
 ##############################################################################################################################
             
 if ( ! function_exists( 'fbf_add_styles' ) ) {            
-    add_action( 'wp_enqueue_scripts', 'fbf_add_styles' );
+    add_action('wp_enqueue_scripts', 'fbf_add_styles');
     
     function fbf_add_styles() {
         wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
         wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'parent-style' ) );
     }
+}
+
+
+add_action( 'wp_enqueue_scripts', 'fbf_add_scripts' );
+function fbf_add_scripts() {
+    wp_enqueue_script( 'custom-gallery', plugins_url( '/assets/js/fbf.js' , __FILE__ ) );
 }
 
 
