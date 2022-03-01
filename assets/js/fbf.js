@@ -8,7 +8,7 @@ console.log(siteTitle);
 
 for(var i = 0; i < siteTitle.length; i++){
 
-    var a = siteTitle.firstChild;
+    var a = siteTitle[i].firstChild;
     console.log(a)
     a.classList.add("no-text-decoration");
 
