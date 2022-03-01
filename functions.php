@@ -16,7 +16,8 @@ if ( ! function_exists( 'fbf_add_styles' ) ) {
 
 add_action( 'wp_enqueue_scripts', 'fbf_add_scripts' );
 function fbf_add_scripts() {
-    wp_enqueue_script( 'custom-gallery', plugins_url( 'fbf.js' , __FILE__ ) );
+    wp_register_script( 'custom js', plugins_url( 'fbf.js' , __FILE__ ) );
+    wp_enqueue_script("custom js");
 }
 
 
