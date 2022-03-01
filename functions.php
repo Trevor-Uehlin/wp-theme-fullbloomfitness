@@ -9,3 +9,9 @@ if ( ! function_exists( 'b7ectg_theme_enqueue_styles' ) ) {
         wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'parent-style' ) );
     }
 }
+
+
+function my_excerpt_length( $length ) {
+	return 20; // # of words, default is 55.
+}
+add_filter( 'excerpt_length', 'my_excerpt_length' );
