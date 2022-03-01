@@ -16,12 +16,12 @@ if ( ! function_exists( 'fbf_add_styles' ) ) {
 }
 
 
-// JavaScript
-add_action( 'wp_enqueue_scripts', 'fbf_add_scripts' );
+// // JavaScript
+// add_action( 'wp_enqueue_scripts', 'fbf_add_scripts' );
 
-function fbf_add_scripts() {
-    wp_enqueue_script( 'custom-gallery', plugins_url( '/assets/js/fbf.js' , __FILE__ ), array( 'jquery' ) );
-}
+// function fbf_add_scripts() {
+//     wp_enqueue_script( 'custom-gallery', plugins_url( '/assets/js/fbf.js' , __FILE__ ), array( 'jquery' ) );
+// }
 
 
 
