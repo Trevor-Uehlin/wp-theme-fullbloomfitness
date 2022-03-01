@@ -12,6 +12,7 @@ if ( ! function_exists( 'b7ectg_theme_enqueue_styles' ) ) {
 
 // Over riding the default excerpt length for posts.
 function my_excerpt_length( $length ) {
-	return 400; // # of words, default is 55.
+    
+	return 150; // # of words, default is 55.
 }
 add_filter( 'excerpt_length', 'my_excerpt_length' );
