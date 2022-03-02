@@ -4,7 +4,7 @@
 ###################################  ADDING CUSTOM CSS AND JS FILES  #########################################################
 ##############################################################################################################################
             
-if ( ! function_exists( 'fbf_add_styles' ) ) {            
+if(!function_exists('fbf_add_styles')) {            
     add_action('wp_enqueue_scripts', 'fbf_add_styles');
     
     function fbf_add_styles() {
@@ -28,8 +28,8 @@ add_action( 'wp_enqueue_scripts', 'fbf_add_scripts' );
 ##############################################################################################################################
 
 // Over riding the default excerpt length for posts.
-function my_excerpt_length( $length ) {
+function fbf_excerpt_length($length) {
     
 	return 150; // # of words, default is 55.
 }
-add_filter( 'excerpt_length', 'my_excerpt_length' );
+add_filter('excerpt_length', 'fbf_excerpt_length');
